@@ -1,0 +1,84 @@
+*{
+/* the asteric is used to reset all default margins that come in h1s, paragraphs or links */
+    margin:0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    line-height: 1.6;
+}
+
+#imgbakgn{
+    background-image: url('../img/pexels-photo-1049298.jpeg');
+   /* to view the image in 100% height...cover the landing page heightwise...use the whole window*/
+    height: 100vh; 
+    /* to see the whole image */
+    background-size: cover;
+    /* center the image */
+    background-position: center;
+    /* makes it a flex container... it will align all items i.e. the
+    h1s, paragraphs horizontally as flex items*/
+    display: flex;
+    /* change the flex to a column... i.e the text(header, paragraph, link will go below each other */
+    flex-direction: column;
+    /* move text to the middle of the page */
+    justify-content: center;
+    /* move content to the middle */
+    align-items: center;
+    /* move text to the middle when resizing the page */
+    text-align: center;
+    /* when screen is resized the spacing will not be affected */
+    padding: 0 20px;
+}
+
+#imgbakgn h1{
+    font-size: 50px;
+}
+#imgbakgn p{
+    font-size: 20px;
+}
+/* changing the link to a button */
+#imgbakgn .button{
+    font-size: 18px;
+    /* remove the underline on the link */
+    text-decoration: none;
+    color: burlywood;
+    border: burlywood 1px solid;
+    border-radius: 10px;
+    /* push the button down */
+    margin-top: 20px;
+}
+
+imgbakgn .button:hover{
+    background: burlywood;
+    color: white;
+}
+
+#first-section{
+    padding: 20px;
+    background: burlywood;
+    color: white;
+    text-align: center;
+}
+
+#second-section{
+    padding: 20px;
+    background: whitesmoke;
+    text-align: center;
+}
+#third-section{
+    /* will align all three divs horizontally */
+    display: flex;
+}
+
+#third-section .box-a, #third-section .box-c{
+    background: burlywood;
+    color: white;
+}
+
+#third-section .box-b{
+    background: lightgrey;
+}
